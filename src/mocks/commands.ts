@@ -3,7 +3,7 @@ export const commands = {
     {
       id: "1246411106",
       date: "2023-09-06T14:41:57Z",
-      amount: 9.53,
+      amount: 9.3,
       action: 3,
       url: "/mon-compte/commande-detail/1246411106",
       canal: "EBOUTIQUE",
@@ -23,7 +23,21 @@ export const commands = {
 
           product_line: "LREL",
         },
+        {
+          picto: "MTEL",
 
+          name: "Mon Timbre en Ligne",
+
+          quantity: "1",
+
+          amount: 2.25,
+
+          url: "/mon-compte/commande-detail/1246411106",
+
+          action: 3,
+
+          product_line: "MtelProduct",
+        },
         {
           picto: "MTEL",
 
