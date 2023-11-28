@@ -4,27 +4,23 @@ import { commands } from "./mocks/commands";
 import { contracts } from "./mocks/contracts";
 import { mtel } from "./mocks/mtel";
 import { colissimo } from "./mocks/colissimo";
-import { appointments, history } from "./mocks/appointments";
-import { contractsPro } from "./mocks/pro/contracts";
+import { history } from "./mocks/appointments";
 import { configuration } from "./mocks/pro/configuration";
+import { contractsPro } from "./mocks/pro/contracts";
 
 // MTEL - BOUTIQUE-PHOENIX,
 
-let counter = 1;
-
 const pause = (seconds: number): Promise<void> => {
-  counter++;
   return new Promise<void>((resolve) => {
     setTimeout(() => {
       resolve();
-    }, (seconds + counter) * 1000);
+    }, seconds * 1000);
   });
 };
 
 const app = new Elysia();
 app.get("/userInfo", async () => user);
 app.get("/commands", async () => {
-  await pause(2);
   return commands;
 });
 

@@ -5,7 +5,7 @@ export const configuration = {
     shippedBy: "Expédié par",
     cart: "cart",
     backlink: {
-      label: "Retour vers la poste.fr",
+      label: "Retour vers l'appli",
       url: "https://www.laposte.fr",
     },
     preference: {
@@ -419,16 +419,25 @@ export const configuration = {
         navigationFooterCloseLabel: "Réduire le menu",
         navigationFooterCloseLabelHover: "Garder le menu ouvert",
       },
-      contractPro: {
-        header: {
-          title: "Vos contrats",
-          subtitle:
-            "Retrouvez ici vos contrats et les services que vous avez souscrits après de la Poste.",
-        },
-        footer: {
-          message:
-            "<p>Seuls les contrats ou les services terminées depuis Octobre 2022 apparaissent sur la liste. Si vous rechercher un service plus ancienne ou qui n'apparaissent pas, merci de <a href='/contrats'>contacter La Poste.</a></p>",
-        },
+    },
+    contractPro: {
+      alert: {
+        title: "Dans quel cas La Poste peut suspendre mon service ?",
+        listElement: [
+          "Incident de paiement",
+          "Perte de la certification",
+          "Annulation d’une autorisation de prélèvement",
+        ],
+        text: "<p>Pour obtenir plus d’informations, merci de contacter <b>le Service client : au 3634</b>, du lundi au vendredi de 9h à 18h (appel non surtaxé, hors surcoût éventuel selon opérateur).</p>",
+      },
+      header: {
+        title: "Vos contrats",
+        subtitle:
+          "Retrouvez ici vos contrats et les services que vous avez souscrits auprès de La Poste.",
+      },
+      footer: {
+        message:
+          "<p>Si vous recherchez un contrat plus ancien ou que l’un de vos contrats n’apparait pas, merci de <a href='https://aide.laposte.fr/professionnel'>contacter La Poste.</a></p>",
       },
     },
   },
