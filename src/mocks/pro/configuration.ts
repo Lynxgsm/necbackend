@@ -5,7 +5,7 @@ export const configuration = {
     shippedBy: "Expédié par",
     cart: "cart",
     backlink: {
-      label: "Retour vers l'appli",
+      label: "Retour vers laposte.fr",
       url: "https://www.laposte.fr",
     },
     preference: {

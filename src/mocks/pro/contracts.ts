@@ -1,15 +1,15 @@
-import { mockContracts } from "./mockContracts";
+import { mockContracts } from './mockContracts';
 
 export const contractsPro = {
   type: 1,
-  data: mockContracts.default,
+  data: mockContracts.quatro,
 };
 
 //   {
 //     begin_date_label: "5/10/2023",
 //     end_date_label: "10/10/2024",
 //     id: "293040928",
-//     image: "contract/vsmp.svg",
+//     image: "/contract/vsmp.svg",
 //     informations:
 //       "<p>Proinde concepta <span>rabie saeviore </span>, quam desperatio incendebat et fames, amplificatis viribus ardore incohibili in excidium urbium matris Seleuciae efferebantur, quam comes tuebatur Castricius tresque legiones bellicis sudoribus induratae.Latius iam disseminata licentia onerosus bonis omnibus Caesar nullum post haec adhibens modum orientis latera cuncta vexabat nec honoratis parcens nec urbium primatibus nec plebeiis </p>",
 //     name: "Réexpédition définitive en France ou DOM-COM",
@@ -21,7 +21,7 @@ export const contractsPro = {
 //   },
 //   {
 //     name: "Collecte primo",
-//     image: "contract/vsmp.svg",
+//     image: "/contract/vsmp.svg",
 //     status_id: 0,
 //     status: "Suspendu",
 //     date_suspension: "02/12/23",
@@ -36,7 +36,7 @@ export const contractsPro = {
 //   },
 //   {
 //     name: "Veiller sur mes parents",
-//     image: "contract/vsmp.svg",
+//     image: "/contract/vsmp.svg",
 //     status_id: 0,
 //     status: "En cours",
 //     id: "VSMP061020-744AS1",
@@ -52,7 +52,7 @@ export const contractsPro = {
 //   },
 //   {
 //     name: "Veiller sur mes parents",
-//     image: "contract/vsmp.svg",
+//     image: "/contract/vsmp.svg",
 //     status_id: 0,
 //     status: "Contrat validé",
 //     start_in: "28",
@@ -69,7 +69,7 @@ export const contractsPro = {
 //     begin_date_label: "20/10/2023",
 //     end_date_label: "20/10/2024",
 //     id: "VSMP061020-P4VPK5",
-//     image: "contract/vsmp.svg",
+//     image: "/contract/vsmp.svg",
 //     informations: "Mohamed Bahloul",
 //     name: "Veiller sur mes parents",
 //     status: "Terminé",
@@ -80,7 +80,7 @@ export const contractsPro = {
 //   },
 //   {
 //     name: "Veiller sur mes parents",
-//     image: "contract/vsmp.svg",
+//     image: "/contract/vsmp.svg",
 //     status_id: 0,
 //     status: "En cours",
 //     id: "VSMP280920-D1P8UQ",
@@ -93,7 +93,7 @@ export const contractsPro = {
 //   },
 //   {
 //     name: "Veiller sur mes parents",
-//     image: "contract/vsmp.svg",
+//     image: "/contract/vsmp.svg",
 //     status_id: 0,
 //     status: "Résilié",
 //     id: "VSMP280920-CX2FW8",
@@ -109,7 +109,7 @@ export const contractsPro = {
 //   },
 //   {
 //     name: "Veiller sur mes parents",
-//     image: "contract/vsmp.svg",
+//     image: "/contract/vsmp.svg",
 //     status_id: 0,
 //     status: "Contrat validé",
 //     id: "VSMP280920-5RFHMY",
@@ -122,7 +122,7 @@ export const contractsPro = {
 //   },
 //   {
 //     name: "Veiller sur mes parents",
-//     image: "contract/vsmp.svg",
+//     image: "/contract/vsmp.svg",
 //     status_id: 0,
 //     status: "Contrat validé",
 //     id: "VSMP280920-31ODBE",
@@ -135,7 +135,7 @@ export const contractsPro = {
 //   },
 //   {
 //     name: "Veiller sur mes parents",
-//     image: "contract/vsmp.svg",
+//     image: "/contract/vsmp.svg",
 //     status_id: 0,
 //     status: "Identite a verifier",
 //     id: "VSMP280920-G9QJ1J",
@@ -171,7 +171,7 @@ export const contractsPro = {
 //   },
 //   {
 //     name: "Réexpédition définitive en France ou DOM-COM",
-//     image: "contract/vsmp.svg",
+//     image: "/contract/vsmp.svg",
 //     status_id: 0,
 //     status: "Identite a verifier",
 //     id: "293040928",
@@ -185,7 +185,7 @@ export const contractsPro = {
 //   },
 //   {
 //     name: "Réexpédition définitive en France ou DOM-COM",
-//     image: "contract/vsmp.svg",
+//     image: "/contract/vsmp.svg",
 //     status_id: 0,
 //     status: "Identite a verifier",
 //     id: "293040928",
@@ -199,7 +199,7 @@ export const contractsPro = {
 //   },
 //   {
 //     name: "Réexpédition définitive en France ou DOM-COM",
-//     image: "contract/vsmp.svg",
+//     image: "/contract/vsmp.svg",
 //     status_id: 0,
 //     status: "Identite a verifier",
 //     id: "293040928",
@@ -213,7 +213,7 @@ export const contractsPro = {
 //   },
 //   {
 //     name: "Réexpédition définitive en France ou DOM-COM",
-//     image: "contract/vsmp.svg",
+//     image: "/contract/vsmp.svg",
 //     status_id: 0,
 //     status: "Identite a verifier",
 //     id: "293040928",
