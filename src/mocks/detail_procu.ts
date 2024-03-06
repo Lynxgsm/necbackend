@@ -1,0 +1,48 @@
+export const detailProcu = {
+  name: "PROCURATION",
+  title: "Procuration",
+  image: "contract/procuration.svg",
+  picto: "contract/procuration.svg",
+  status: { id: 1, label: "Active" },
+  informations: {
+    begin_date: "2023-03-06T15:03:12",
+    end_date: "2028-03-06T16:03:15",
+    contact: [
+      {
+        label: "Demandeur",
+        title: "MME",
+        firstname: "Stéphanie",
+        lastname: "Le saulx",
+        line2: null,
+        line3: null,
+        line4: "62 RUE CAMILLE DESMOULINS",
+        line5: null,
+        line6: "92130 ISSY LES MOULINEAUX",
+      },
+      {
+        label: "Personne désignée (mandataire)",
+        title: "MME",
+        firstname: "Pmandataire",
+        lastname: "Nmandataire",
+        line2: null,
+        line3: null,
+        line4: "62 RUE CAMILLE DESMOULINS",
+        line5: null,
+        line6: "92130 ISSY LES MOULINEAUX",
+      },
+    ],
+  },
+  additional: {
+    contract_id: "PP000003461423",
+    info: [],
+    info_card: "Pmandataire Nmandataire",
+  },
+  purchase: {
+    merchant_id: 1,
+    action: 4,
+    url: "/detail/contrat/procu/PP000003461423",
+    date: "2023-03-06T15:03:12",
+    merchant: "Souscrite en ligne, le",
+  },
+  type: "PROCU",
+};

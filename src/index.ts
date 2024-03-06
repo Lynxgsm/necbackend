@@ -7,6 +7,10 @@ import { colissimo } from './mocks/colissimo';
 import { history } from './mocks/appointments';
 import { configuration } from './mocks/pro/configuration';
 import { contractsPro } from './mocks/pro/contracts';
+import { detailContract } from './mocks/detail_contract';
+import { detail_vrel } from './mocks/detail_vrel';
+import { detailColis } from './mocks/detail_colis';
+import { detail_cel } from './mocks/detail_cel';
 
 // MTEL - BOUTIQUE-PHOENIX,
 
@@ -22,13 +26,22 @@ const app = new Elysia();
 app.use(cors());
 
 app.get('/userInfo', async () => user);
-app.get('/commands', async ({ set, cookie }) => {
-  set.status = 206;
-  // set.headers = {
-  //   "Content"
-  // }
-  console.log(cookie);
-  set.headers['x-powered-by'] = 'Elysia';
+app.get('/commands', async ({ set, query }) => {
+  let response = commands.data;
+  if (query) {
+    const { offset, limit } = query;
+    response = commands.data.slice(
+      Number(offset),
+      Number(offset) + Number(limit)
+    );
+    set.status = 206;
+    set.headers = {
+      'content-range': `${commands.data.length}`,
+    };
+
+    return { ...commands, data: response, count: response.length };
+  }
+
   return commands;
 });
 
@@ -45,6 +58,34 @@ app.get('/error', ({ set }) => {
   return "I'm teapod";
 });
 
+app.get('/contracts/:id', () => {
+  return detailContract;
+});
+
+app.get('/bufferize', () => {
+  const buffered = '';
+  return buffered;
+});
+
+app.get('/commands/detail/vrel/:id/:type', async () => {
+  await pause(3);
+  return detail_vrel;
+});
+
+app.get('/backoffice', () => {
+  return {
+    header: '(status, canal) => `Souscrit le ${status} à ${canal}`',
+  };
+});
+
+app.get('/commands/detail/colis/:id/:type', async () => {
+  return detailColis;
+});
+
+app.get('/commands/detail/cel/:id/:type', async () => {
+  return detail_cel;
+});
+
 app.get('/unauthorized', ({ set }) => {
   set.status = 401;
   set.headers['x-powered-by'] = 'Elysia';
@@ -53,9 +94,8 @@ app.get('/unauthorized', ({ set }) => {
 });
 
 app.get('/appointments', async () => history);
-app.get('/mtel', ({ set }) => {
+app.get('/commands/detail/mtel/Z000/0', ({ set }) => {
   set.status = 206;
-  console.log(mtel.data.products.length);
   return mtel;
 });
 app.get('/colissimo', () => colissimo);
